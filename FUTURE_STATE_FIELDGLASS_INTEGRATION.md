@@ -91,9 +91,6 @@ sequenceDiagram
     Note over MW: Step 2: Call Fieldglass API
     MW->>FG: GET/POST /api/v1/...<br/>Authorization: Bearer {token}
     FG->>MW: JSON Response
-
-    style Auth fill:#0070F2,color:#fff
-    style FG fill:#0070F2,color:#fff
 ```
 
 ### Token Request

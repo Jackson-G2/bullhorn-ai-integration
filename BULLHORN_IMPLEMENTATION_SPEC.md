@@ -103,7 +103,7 @@ flowchart TD
     Token --> Method2[Method 2: Query Parameter]
     Token --> Method3[Method 3: Cookie]
     
-    Method1 --> Example1[BhRestToken: abcd1234...]
+    Method1 --> Example1["BhRestToken: abcd1234..."]
     Method2 --> Example2[?BhRestToken=abcd1234...]
     Method3 --> Example3[Cookie: BhRestToken=abcd1234...]
     
@@ -170,7 +170,7 @@ flowchart TD
     Query --> Operators[Boolean Operators]
     Query --> Ranges[Range Queries]
     
-    Field --> Example1[status:"Active"]
+    Field --> Example1["status: Active"]
     Operators --> Example2[AND, OR, NOT]
     Ranges --> Example3[dateAdded:[2023-01-01 TO *]]
     

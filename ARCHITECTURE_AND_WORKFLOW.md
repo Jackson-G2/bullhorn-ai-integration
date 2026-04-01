@@ -119,9 +119,6 @@ sequenceDiagram
     Note over App: Step 4: Make API Calls
     App->>API: GET/POST with BhRestToken
     API->>App: Data Response
-    
-    style BH fill:#4A90D9,color:#fff
-    style API fill:#4A90D9,color:#fff
 ```
 
 ### Session Token Requirements
@@ -157,7 +154,7 @@ flowchart TD
     Eval --> Parse[Parse JSON Response<br/>Extract Rankings]
     Parse --> Loop{More Candidates<br/>to Update?}
     
-    Loop -->|Yes| Update[Update Candidate Record<br/>POST /entity/Candidate/{id}]
+    Loop -->|Yes| Update[Update Candidate Record<br/>POST /entity/Candidate/id]
     Update --> Log[Log Update Success]
     Log --> Loop
     
