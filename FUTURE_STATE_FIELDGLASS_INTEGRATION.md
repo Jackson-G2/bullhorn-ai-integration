@@ -167,8 +167,8 @@ flowchart TD
     FG -->|Submission Status| MW
     MW -->|Status Update| BH
 
-    style Phase1 fill:#E8F4FD
-    style Phase2 fill:#FFF3E0
+    style Phase1 fill:#E8F4FD,color:#333
+    style Phase2 fill:#FFF3E0,color:#333
 ```
 
 ### Detailed Submission Workflow
@@ -288,7 +288,7 @@ flowchart LR
     R4 --> Archive[Archive / Do Not Submit]
 
     style Auto fill:#28A745,color:#fff
-    style Hold fill:#FFC107,color:#000
+    style Hold fill:#FFC107,color:#333
     style Archive fill:#DC3545,color:#fff
 ```
 

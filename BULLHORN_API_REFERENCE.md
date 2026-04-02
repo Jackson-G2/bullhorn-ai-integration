@@ -21,7 +21,7 @@ flowchart LR
     C --> D[Login Request]
     D --> E[BhRestToken<br/>Session Token]
     E --> F[API Calls<br/>Search/Update]
-    
+
     style E fill:#28A745,color:#fff
     style F fill:#4A90D9,color:#fff
 ```
@@ -106,7 +106,7 @@ flowchart TD
     Method1 --> Example1["BhRestToken: abcd1234..."]
     Method2 --> Example2[?BhRestToken=abcd1234...]
     Method3 --> Example3[Cookie: BhRestToken=abcd1234...]
-    
+
     style Method1 fill:#28A745,color:#fff
 ```
 
@@ -131,7 +131,7 @@ flowchart LR
     B --> C[Field Selection]
     C --> D[Pagination]
     D --> E[JSON Response<br/>Candidate Array]
-    
+
     style B fill:#FF6B6B,color:#fff
     style E fill:#4A90D9,color:#fff
 ```
@@ -173,10 +173,10 @@ flowchart TD
     Field --> Example1["status: Active"]
     Operators --> Example2[AND, OR, NOT]
     Ranges --> Example3[dateAdded:[2023-01-01 TO *]]
-    
-    style Example1 fill:#E8F4FD
-    style Example2 fill:#E8F4FD
-    style Example3 fill:#E8F4FD
+
+    style Example1 fill:#E8F4FD,color:#333
+    style Example2 fill:#E8F4FD,color:#333
+    style Example3 fill:#E8F4FD,color:#333
 ```
 
 ### Common Query Examples
@@ -270,7 +270,7 @@ flowchart LR
     B --> C[JSON Payload<br/>Fields to Update]
     C --> D[POST Request]
     D --> E[Updated Record<br/>Confirmation]
-    
+
     style C fill:#7B68EE,color:#fff
     style E fill:#28A745,color:#fff
 ```
@@ -322,7 +322,7 @@ flowchart TD
     Opt4 --> Config
     
     Config --> Visible[Make Field Visible<br/>in Bullhorn UI]
-    
+
     style Rank fill:#7B68EE,color:#fff
     style Visible fill:#28A745,color:#fff
 ```
@@ -415,8 +415,8 @@ flowchart TD
     Process --> Response[Return Response]
     Wait --> Backoff[Exponential Backoff<br/>1s, 2s, 4s, 8s]
     Backoff --> Request
-    
-    style Check fill:#FFC107,color:#000
+
+    style Check fill:#FFC107,color:#333
     style Wait fill:#DC3545,color:#fff
 ```
 
@@ -466,9 +466,9 @@ flowchart TD
     NotFound --> Fix4[Skip or Log]
     RateLimit --> Fix5[Wait and Retry]
     ServerError --> Fix6[Retry with Backoff]
-    
+
     style Unauthorized fill:#DC3545,color:#fff
-    style RateLimit fill:#FFC107,color:#000
+    style RateLimit fill:#FFC107,color:#333
 ```
 
 ### Error Response Structure
